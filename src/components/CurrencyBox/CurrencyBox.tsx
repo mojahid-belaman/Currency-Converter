@@ -42,7 +42,7 @@ const CurrencyBox: FC<CurrencyBoxProps> = (props) => {
           value={selectCurrency}
           className="bg-gray-100 h-[24px] outline-none rounded"
           onChange={(e) => onChangeCurrency(e.target.value)}
-          disabled={amountDisabled }
+          disabled={amountDisabled}
         >
           {currencyOption.map((currency) => (
             <option key={currency}>{currency}</option>
