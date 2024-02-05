@@ -1,5 +1,14 @@
+import { FormCurrency } from "./components/FormCurrency";
+import { Card } from "./components/ui";
+
 function App() {
-  return <div className="bg-red-200">Hello World</div>;
+  return (
+    <div className="w-full h-screen bg-currency bg-cover bg-no-repeat flex justify-center items-center">
+      <Card>
+        <FormCurrency />
+      </Card>
+    </div>
+  );
 }
 
 export default App;
