@@ -20,7 +20,7 @@ const CurrencyBox: FC<CurrencyBoxProps> = (props) => {
     currencyOption,
     amountDisabled = false,
   } = props;
-  
+
   return (
     <div className="bg-white flex p-5 justify-between rounded">
       <div className="w-1/2 flex flex-col gap-y-2">
@@ -42,6 +42,7 @@ const CurrencyBox: FC<CurrencyBoxProps> = (props) => {
           value={selectCurrency}
           className="bg-gray-100 h-[24px] outline-none rounded"
           onChange={(e) => onChangeCurrency(e.target.value)}
+          disabled={amountDisabled }
         >
           {currencyOption.map((currency) => (
             <option key={currency}>{currency}</option>
